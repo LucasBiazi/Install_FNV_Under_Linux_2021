@@ -34,4 +34,15 @@ Now New Vegas (and plenty of other games) can be installed. I won’t go over th
 
 
 While your download gets finished, let’s talk about Proton. More specifically, about its versions. Chances are that you will use Proton to play other Steam games, so it is worth mentioning **ProtonDB**. In order to know which Proton version will better support your game, and if there will be any bug/fix needed, I strongly recommend you accessing [ProtonDB](https://www.protondb.com/). There you will find all Steam games and their rank base on how well they run.
-For me the version the better suited the game was 4.11-13. If your Proton version happen to not suit New Vegas well, you can simply change it:
+For me the version the better suited the game was 4.11-13. If your Proton version happen to not suit New Vegas well, you can simply do it by: **right-clicking on the game > properties > compatibility > Force the use of a specific Steam Play compatibility tool:**
+
+
+Right-clicking on the game:
+
+![Alt text](/images/proton_version1.png "Changing the Proton version for a specific game")
+
+
+
+Compatibility tab:
+
+![Alt text](/images/proton_version2.png "Choosing a Proton version")
