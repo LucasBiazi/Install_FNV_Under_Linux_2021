@@ -7,7 +7,7 @@ Installing New Vegas may not sound like a challenge, but when we talk about stab
 ## Steps:
 1. [Getting the Game](#getting-the-game);
 1. [Steam tweaks](#steam-tweaks);
-1. [Modifications](#):
+1. [Modifications](#modifications):
    1. [4GB Patcher](#);
    1. [New Vegas Stended Script](#);
    1. ...
@@ -51,3 +51,7 @@ For me the version the better suited the game was 4.11-13. If your Proton versio
 
 
 Now you should open the launcher for the first time. The game will automatically detect your hardware and adjust the settings accordingly. Make sure you have all Steam dependencies (and make sure you have all of your GPU’s dependencies as well). Configure all that you want to now! I would encourage you to check the resolution configuration, old game old parameters, is probably going to be wrong. Hit play, get back.
+
+
+## Modifications
+From now on this tutorial will be based on the following video: (https://www.youtube.com/watch?v=Cypqage_Pdk)
