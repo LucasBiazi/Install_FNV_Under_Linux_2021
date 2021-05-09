@@ -6,10 +6,10 @@ Installing New Vegas may not sound like a challenge, but when we talk about stab
 
 ## Steps:
 1. [Getting the Game](#getting-the-game);
-1. [Steam tweaks];
-1. [Modifications]:
-   1. [4GB Patcher];
-   1. [New Vegas Stended Script];
+1. [Steam tweaks](#steam-tweaks);
+1. [Modifications](#):
+   1. [4GB Patcher](#);
+   1. [New Vegas Stended Script](#);
    1. ...
 1.[Extra Tips];
 
@@ -30,6 +30,8 @@ Hopefully Valve has been changing the game for Linux users, and now playing Wind
 
 ![Alt text](/images/steam_play2.png "Steam Play 2")
 
+
+## Steam Tweaks
 Now New Vegas (and plenty of other games) can be installed. I won’t go over the basics on how to set a SteamLibrary file, verify your download and etc… it can be easily found in [Steam’s documentation](https://support.steampowered.com/kb.php), if you happen to have any doubt.
 
 
@@ -37,12 +39,15 @@ While your download gets finished, let’s talk about Proton. More specifically,
 For me the version the better suited the game was 4.11-13. If your Proton version happen to not suit New Vegas well, you can simply do it by: **right-clicking on the game > properties > compatibility > Force the use of a specific Steam Play compatibility tool:**
 
 
-Right-clicking on the game:
+**Right-clicking on the game:**
 
 ![Alt text](/images/proton_version1.png "Changing the Proton version for a specific game")
 
 
 
-Compatibility tab:
+**Compatibility tab:**
 
 ![Alt text](/images/proton_version2.png "Choosing a Proton version")
+
+
+Now you should open the launcher for the first time. The game will automatically detect your hardware and adjust the settings accordingly. Make sure you have all Steam dependencies (and make sure you have all of your GPU’s dependencies as well). Configure all that you want to now! I would encourage you to check the resolution configuration, old game old parameters, is probably going to be wrong. Hit play, get back.
