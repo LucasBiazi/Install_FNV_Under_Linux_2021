@@ -152,4 +152,4 @@ Change the following values:
 * iMaxSizeForCachedSound=256 **---->** iMaxSizeForCachedSound=1024
 
 
-Hope it was worth your reading! Check the video mentioned earlier in order to check some extra tweaks that you can do, happy trails!
+Hope it was worth your reading! Check the video mentioned earlier in order to be aware of some extra tweaks that you can do, happy trails!
