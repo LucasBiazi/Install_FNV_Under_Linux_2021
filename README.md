@@ -102,3 +102,4 @@ Now copy the **.dll** and **.exe** files to your Fallout NV directory.
 
 Go to your FNV directory and rename the file **FalloutNVLauncher.exe** back to **FNVpatch.exe** and **nvse_loader.exe** to **FalloutNVLauncher.exe**. To make sure it has worked, hit play in Steam, go into the game console and type: `GetNVSEVersion`. If you received a reply informing the version of your NVSE, than it worked:
 
+![Alt text](/images/nvse_version.png "NVSE version.")
