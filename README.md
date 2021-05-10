@@ -4,12 +4,12 @@
 Fallout: New Vegas is fan favorite and considered one of the best role-playing-games of the decade.
 Installing New Vegas may not sound like a challenge, but when we talk about stability things change. In this brief guide I will be walking you through the process of installing and modding New Vegas under you Linux machine focusing on stability, so you can finally play for more than 5 minutes. Specifically in this guide I will be using Arch Linux (btw) and Steam, but since you are a Linux user, tweaking it for your distribution shouldn’t be an issue considering that very little things will change (such as package manager, etc...). I also assume that you have basic knowledge about ordinary Linux commands. Are you ready?
 
-## Steps:
+## Index:
 1. [Getting the Game](#getting-the-game);
 1. [Steam tweaks](#steam-tweaks);
 1. [Modifications](#modifications):
    1. [4GB Patcher](#4gb-patcher);
-   1. [New Vegas Stended Script](#);
+   1. [New Vegas Script Extender (NVSE)](#new-vegas-script-extender);
    1. ...
 1.[Extra Tips];
 
@@ -81,4 +81,24 @@ Now you should have the **FNVpatch.exe** file extracted. Lets move it into our F
 `mv FNVpatch.exe /SteamLibrary/steamapps/common/Fallout\ New\ Vegas/` # Move it to the same place where your launcher is.
 
 Now for the sneaky part: rename your **FalloutNVLauncher.exe** to **FalloutNVLauncher.exe.back**, and rename **FNVpatch.exe** to **FalloutNVLauncher.exe**. Go back to Steam and execute Fallout: New Vegas. Your should see the following prompt pop up:
+
+![Alt text](/images/4gb_patch.png "Patching the game.")
+
+Push any key to continue. Now you game is patched.
+
+
+## New Vegas Script Extender
+What it is and why to use it: http://nvse.silverlock.org/
+
+Download the stable version using the link above. Again, go to the directory that you downloaded the file and extract it with p7zip:
+
+`7z e nvse_5_1_beta4.7z` # Extracting the files
+
+Now copy the **.dll** and **.exe** files to your Fallout NV directory.
+
+`find . -name "*.dll" && find . -name "*.exe"` # This are all the files that we must copy
+
+`cp nvse_steam_loader.dll nvse_editor_1_4.dll nvse_1_4.dll nvse_1_4ng.dll nvse_loader.exe /SteamLibrary/steamapps/common/Fallout\ New\ Vegas/` # Copying all the needed files
+
+Go to your FNV directory and rename the file **FalloutNVLauncher.exe** back to **FNVpatch.exe** and **nvse_loader.exe** to **FalloutNVLauncher.exe**. To make sure it has worked, hit play in Steam, go into the game console and type: `GetNVSEVersion`. If you received a reply informing the version of you NVSE, than it worked:
 
