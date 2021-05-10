@@ -139,3 +139,17 @@ Done!
 
 
 ## INI Files
+Alright, this is the last step. Go to:
+`vim /user_data/SteamLibrary/steamapps/compatdata/22380/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/FalloutNV/Fallout.ini` # No need to use vim, you can do it using nano if you want to
+
+Change the following values:
+
+* bSelectivePurgeUnusedOnFastTravel=0 **---->** bSelectivePurgeUnusedOnFastTravel=1
+* bPreemptivelyUnloadCells=0 **---->** bPreemptivelyUnloadCells=1
+* bUseThreadedAI=0 **---->** bUseThreadedAI=1
+* iNumHavokThreads=1 **---->** iNumHavokThreads=number of cpu cores that you have
+* iAudioCacheSize=2048 **---->** iAudioCacheSize=8192
+* iMaxSizeForCachedSound=256 **---->** iMaxSizeForCachedSound=1024
+
+
+Hope it was worth your reading! Check the video mentioned earlier in order to check some extra tweaks that you can do, happy trails!
