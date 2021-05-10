@@ -8,7 +8,7 @@ Installing New Vegas may not sound like a challenge, but when we talk about stab
 1. [Getting the Game](#getting-the-game);
 1. [Steam tweaks](#steam-tweaks);
 1. [Modifications](#modifications):
-   1. [4GB Patcher](#);
+   1. [4GB Patcher](#4gb-patcher);
    1. [New Vegas Stended Script](#);
    1. ...
 1.[Extra Tips];
@@ -55,4 +55,30 @@ Now you should open the launcher for the first time. The game will automatically
 
 ## Modifications
 From now on this tutorial will be based on the following video: https://www.youtube.com/watch?v=Cypqage_Pdk
+
 Most guides will probably tell you to follow by using wine. We won’t be using it, there’s a sneaky way around. If you know a thing or two about Steam, you are aware that it only cares about the name of the .exe file, regardless of what it is. You probably know where I’m going now… Instead of executing the patches using wine, we’ll do it by using Steam. That’s the trick.
+However, if you insist in going on with Wine, I would recommend controlling it within a container or with a specific user. 
+
+Vanilla wine should seal the deal:
+`sudo pacman -S wine`
+
+**Disclaimer:** some operations when executed by wine may display errors. If that’s the case, just re-execute it and you should be fine. If even by re-doing the operation the goals weren’t reached, then you’ll have to customize you wine installation.
+
+## 4GB Patcher
+What it is and why to use it: https://www.nexusmods.com/newvegas/mods/62552?tab=description
+
+Download the file (the version that does not require the VC++ redist) from the link above (you will need a nexus account). Please, note that the file extension is in .7z. With that being said, you will need a software to extract it. I personally use **p7zip**.
+
+
+`sudo pacman -S p7zip` # Installing the extraction software
+
+Navigate to the directory that you’ve just downloaded the file and execute:
+
+`7z e 4GB\ Patcher-62552-1-5-1618787921.7z` # Extracting the patcher
+
+Now you should have the **FNVpatch.exe** file extracted. Lets move it into our FNV installation directory (note that this isn’t a normal mod, it is a patcher! Therefore don’t put it into your DATA folder):
+
+`mv FNVpatch.exe /SteamLibrary/steamapps/common/Fallout\ New\ Vegas/` # Move it to the same place where your launcher is.
+
+Now for the sneaky part: rename your **FalloutNVLauncher.exe** to **FalloutNVLauncher.exe.back**, and rename **FNVpatch.exe** to **FalloutNVLauncher.exe**. Go back to Steam and execute Fallout: New Vegas. Your should see the following prompt pop up:
+
