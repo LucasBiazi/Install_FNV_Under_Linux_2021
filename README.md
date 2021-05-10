@@ -10,8 +10,9 @@ Installing New Vegas may not sound like a challenge, but when we talk about stab
 1. [Modifications](#modifications):
    1. [4GB Patcher](#4gb-patcher);
    1. [New Vegas Script Extender (NVSE)](#new-vegas-script-extender);
-   1. ...
-1.[Extra Tips];
+   1. [New Vegas Anti Chrash](#new-vegas-anti-crash);
+   1. [New Vegas Stutter Remover](#new-vegas-stutter-remover);
+   1. [.ini Files](#ini-files).
 
 
 ## Getting the Game
@@ -76,7 +77,7 @@ Navigate to the directory that you’ve just downloaded the file and execute:
 
 `7z e 4GB\ Patcher-62552-1-5-1618787921.7z` # Extracting the patcher
 
-Now you should have the **FNVpatch.exe** file extracted. Lets move it into our FNV installation directory (note that this isn’t a normal mod, it is a patcher! Therefore don’t put it into your DATA folder):
+Now you should have the **FNVpatch.exe** file extracted. Lets move it into our FNV installation directory (note that this isn’t a normal mod, it is a patcher! Therefore don’t put it into your Data folder):
 
 `mv FNVpatch.exe /SteamLibrary/steamapps/common/Fallout\ New\ Vegas/` # Move it to the same place where your launcher is.
 
@@ -90,7 +91,7 @@ Push any key to continue. Now you game is patched.
 ## New Vegas Script Extender
 What it is and why to use it: http://nvse.silverlock.org/
 
-Download the stable version using the link above. Again, go to the directory that you downloaded the file and extract it with p7zip:
+Download the stable version using the link above. Again, go to the directory that you downloaded the file and extract it with p7zip (if it asks you about replacing any archive, just hit **N**):
 
 `7z e nvse_5_1_beta4.7z` # Extracting the files
 
@@ -103,3 +104,38 @@ Now copy the **.dll** and **.exe** files to your Fallout NV directory.
 Go to your FNV directory and rename the file **FalloutNVLauncher.exe** back to **FNVpatch.exe** and **nvse_loader.exe** to **FalloutNVLauncher.exe**. To make sure it has worked, hit play in Steam, go into the game console and type: `GetNVSEVersion`. If you received a reply informing the version of your NVSE, than it worked:
 
 ![Alt text](/images/nvse_version.png "NVSE version.")
+
+
+Now go back to your FNV directory and open de Data folder. Execute the following commands in the order presented:
+
+`mkdir NVSE` # Creating a folder called 'NVSE'
+
+`cd NVSE` # Going within the recently created folder
+
+`touch NVSE_Config.ini && echo "[Memory]" > NVSE_Config.ini && echo "DefaultHeapInitialAllocMB=400" >> NVSE_Config.ini` # Creating the .ini file
+
+## New Vegas Anti Crash
+Once again, what it is, why to use it: https://www.nexusmods.com/newvegas/mods/53635/?tab=files
+
+Download the file through the link above an extract it:
+`7z e NVAC\ -\ New\ Vegas\ Anti\ Crash-53635-7-5-1-0.zip` # Extracting NVAC
+
+Got to your FNV folder > Data > NVSE and them:
+`mkdir Plugins` # Creating the 'Plugins' folder
+
+Finally, drop the extracted **nvac.dll** file into youe recently created folder. You're done with this one.
+
+
+## New Vegas Stutter Remover
+We're almost done, I swear! NVSR: https://www.nexusmods.com/newvegas/mods/34832
+
+You know how it goes, download from the link above and then extract the files:
+`7z e NVSR_4-1-36-34832-4-1-36.zip` # Extracting NVSR
+
+Now let's move the **sr_New_Vegas_Stutter_Remover.dll** file into our Plugin's folder:
+`mv sr_New_Vegas_Stutter_Remover.dll /SteamLibrary/steamapps/common/Fallout\ New\ Vegas/Data/NVSE/Plugins/`
+
+Done!
+
+
+## INI Files
