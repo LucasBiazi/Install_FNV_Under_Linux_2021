@@ -1,4 +1,4 @@
-# **How to install Fallou: New Vegas under Linux in 2021**
+# **How to install Fallout: New Vegas under Linux in 2021**
 
 ## Summary: 
 Fallout: New Vegas is fan favorite and considered one of the best role-playing-games of the decade.
