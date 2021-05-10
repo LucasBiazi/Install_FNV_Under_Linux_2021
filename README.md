@@ -54,4 +54,5 @@ Now you should open the launcher for the first time. The game will automatically
 
 
 ## Modifications
-From now on this tutorial will be based on the following video: (https://www.youtube.com/watch?v=Cypqage_Pdk)
+From now on this tutorial will be based on the following video: https://www.youtube.com/watch?v=Cypqage_Pdk
+Most guides will probably tell you to follow by using wine. We won’t be using it, there’s a sneaky way around. If you know a thing or two about Steam, you are aware that it only cares about the name of the .exe file, regardless of what it is. You probably know where I’m going now… Instead of executing the patches using wine, we’ll do it by using Steam. That’s the trick.
