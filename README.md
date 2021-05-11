@@ -127,6 +127,7 @@ Finally, drop the extracted **nvac.dll** file into youe recently created folder.
 
 
 ## New Vegas Stutter Remover
+**Disclaimer:** Some say NVSR is depreciated, consider reading: https://vivanewvegas.github.io/avoid-mods.html
 We're almost done, I swear! NVSR: https://www.nexusmods.com/newvegas/mods/34832
 
 You know how it goes, download from the link above and then extract the files:
