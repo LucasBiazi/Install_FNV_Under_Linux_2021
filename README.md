@@ -142,7 +142,7 @@ Done!
 
 ## INI Files
 Alright, this is the last step. Go to:
-`vim /user_data/SteamLibrary/steamapps/compatdata/22380/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/FalloutNV/Fallout.ini` # No need to use vim, you can do it using nano if you want to
+`vim /SteamLibrary/steamapps/common/Fallout New Vegas/Fallout_default.ini` # No need to use vim, you can do it using nano if you want to
 
 Change the following values:
 
